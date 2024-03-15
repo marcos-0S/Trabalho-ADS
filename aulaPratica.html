@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia Leonardo da Vince</title>
+    <style>
+        body {
+            margin: 1;
+            background-color: #86b8b1;
+            font-size: 18px;
+        }
+
+        .conteiner_botao {
+            display: block;
+            text-decoration: none;
+            width: 550px;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+        }
+
+        .menu {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            justify-content: center;
+            /*Centraliza o menu*/
+            gap: 50px;
+            /*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 1;
+            grid-column-start: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+            color: white;
+        }
+
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+            list-style-type: none;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        /*.img {
+            border: 1px;
+            border-radius: 1rem;
+            padding: 0Brem;
+            margin-bottom: 0.Brem;
+        }*/
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        /*media query para dispositivos moveis*/
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div> <!--Botão voltar para a página apresenação-->
+        <a href="portfolio.html">
+            <button>
+                VOLTAR
+            </button>
+        </a>
+        <header>
+            <h1 style="color: white; text-align: center;">Biografia do Leonardo da Vinci</h1>
+            <br>
+        </header>
+
+        <nav class="container menu">
+            <ul>
+                <li><a href="https://www.ebiografia.com/leonardo_vinci/">Biografia</a></li>
+                <li><a href="https://www.ebiografia.com/leonardo_da_vinci_obras/">Obras</a></li>
+                <li><a
+                        href="https://arteref.com/arte-no-mundo/15-fatos-sobre-leonardo-da-vinci-voce-talvez-nao-saiba/">Curiosidades</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container wrapper">
+            <aside class=".imagem_leo">
+                <img src="https://s5.static.brasilescola.uol.com.br/img/2018/03/davinci.jpg">
+                <div class="infos">
+                    <p><strong>Ocupação</strong> Pintor Italiano</p>
+                    <p>
+                        <strong>Data do Nascimento</strong>
+                        15/04/1452
+                    </p>
+                    <p><strong>Data da Morte</strong>
+                        02/05/1519 (aos 67 anos)</p>
+                </div>
+
+            </aside>
+            <section class="principal">
+                <h1>Leonardo Da Vince</h1>
+                <p>
+                    Leonardo da Vinci foi um dos mais renomados polímatas da história, destacando-se como pintor,
+                    escultor,
+                    arquiteto, engenheiro, matemático, anatomista e inventor. Ele nasceu em 15 de abril de 1452, em
+                    Vinci,
+                    na Itália, e faleceu em 2 de maio de 1519, em Amboise, na França.
+                    <br>
+                    <br>
+                    A curiosidade e sede de conhecimento de da Vinci levaram-no a estudar várias disciplinas
+                    científicas.
+                    Ele fez contribuições significativas para a anatomia, produzindo desenhos detalhados da anatomia
+                    humana
+                    que estavam muito à frente de seu tempo. Ele realizou dissecções para entender a estrutura e
+                    função do
+                    corpo humano, criando esboços anatômicos precisos.
+                    <br>
+                    <br>
+                    Como engenheiro e inventor, da Vinci concebeu máquinas e dispositivos muito à frente de seu
+                    tempo,
+                    incluindo máquinas voadoras, veículos blindados e sistemas hidráulicos. Muitos de seus projetos
+                    eram
+                    visionários e influenciaram invenções posteriores, embora muitos nunca tenham sido construídos
+                    durante
+                    sua vida.
+                    <br>
+                    <br>
+                    Suas obras mais famosas como pintor incluem a "Mona Lisa" e "A Última Ceia". "Mona Lisa",
+                    pintada entre
+                    1503 e 1506, é celebrada por seu sorriso enigmático e uso magistral do sfumato. "A Última Ceia",
+                    concluída em 1498, é uma obra-prima de perspectiva e composição.
+                    <br>
+                    <br>
+                    Os cadernos de da Vinci, contendo esboços, diagramas científicos e seus pensamentos sobre vários
+                    assuntos, fornecem valiosas percepções sobre sua mente e trabalho. Ele foi um verdadeiro
+                    polímata
+                    renascentista, incorporando o espírito de investigação, criatividade e inovação de sua época.
+                    <br>
+                    <br>
+                    O legado de Leonardo da Vinci continua a inspirar artistas, cientistas e inventores até hoje,
+                    pois ele
+                    permanece como uma das figuras mais icônicas da história humana.
+                </p>
+            </section>
+        </div>
+
+        <footer class="container">
+            <h1>Desenvolvido para fins educacionais</h1>
+        </footer>
+</body>
+
+</html>
